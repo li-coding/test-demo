@@ -3,7 +3,7 @@
     v-model:expandedKeys="expandedKeys"
     :selectedKeys="selectedKeys"
     @select="handleNodeSelect"
-    @dragenter="onDragEnter"
+    @drop="onDrop"
     :tree-data="treeData"
     blockNode
     draggable
@@ -51,7 +51,7 @@
 <script lang="ts" setup>
 import { ref, nextTick } from 'vue'
 import { PlusOutlined } from '@ant-design/icons-vue'
-import type { AntTreeNodeDragEnterEvent } from 'ant-design-vue/es/tree'
+import type { AntTreeNodeDropEvent } from 'ant-design-vue/es/tree'
 // Tree 节点信息接口
 interface TreeNodeInfo {
   key: string
@@ -157,8 +157,8 @@ const handlePopoverOpen = () => {
   })
 }
 
-function onDragEnter(info: AntTreeNodeDragEnterEvent) {
-  console.log('onDragEnter:', info)
+const onDrop = (info: AntTreeNodeDropEvent) => {
+  console.log('onDrop', info)
 }
 </script>
 

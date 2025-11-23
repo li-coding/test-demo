@@ -2,7 +2,8 @@
   <div class="test-case-card">
     <a-flex justify="space-between" style="height: 100%">
       <div>
-        <TestCaseTree />
+        <!-- <TestCaseTree /> -->
+        <TreeTest />
       </div>
       <div>右边用例列表</div>
     </a-flex>
@@ -11,6 +12,7 @@
 
 <script lang="ts" setup>
 import TestCaseTree from '@/components/TestCaseTree/TestCaseTree.vue'
+import TreeTest from '@/components/TreeTest.vue'
 </script>
 
 <style scoped>
