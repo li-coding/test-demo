@@ -1,9 +1,12 @@
 <template>
   <div>
-    <h1>Dashboard Page</h1>
+    <h1>Home Page</h1>
+    <ExpandableTable />
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import ExpandableTable from '@/components/ExpandableTable.vue'
+</script>
 
-<style></style>
+<style scoped></style>
