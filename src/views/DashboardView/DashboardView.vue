@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>Home Page</h1>
-    <ExpandableTable />
+    <DragTable2 />
   </div>
 </template>
 
 <script lang="ts" setup>
-import ExpandableTable from '@/components/ExpandableTable.vue'
+import DragTable2 from '@/components/DragTable2.vue'
 </script>
 
 <style scoped></style>
