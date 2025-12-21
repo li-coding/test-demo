@@ -29,7 +29,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { SettingOutlined } from '@ant-design/icons-vue'
 
 defineProps({
